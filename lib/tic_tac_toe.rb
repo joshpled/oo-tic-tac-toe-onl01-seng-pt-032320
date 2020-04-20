@@ -91,7 +91,7 @@ end
 def play
   until over? do
     turn
-    won?
+    winner
   end
   if winner
     "Congratulations #{winner}"
