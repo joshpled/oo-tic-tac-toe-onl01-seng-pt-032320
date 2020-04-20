@@ -90,7 +90,6 @@ end
 
 def play
   until over? do
-
   if winner
     "Congratulations #{winner}"
   elsif draw?
