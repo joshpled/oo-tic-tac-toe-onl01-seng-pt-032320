@@ -78,7 +78,8 @@ def draw?
 end
 
 def over?
-  draw? == true ? true : false || (full? == true && draw? == false) ? true : false
+  # draw? == true ? true : false || (full? == true && draw? == false) ? true : false
+  won? || draw?
 end
 
 def winner
