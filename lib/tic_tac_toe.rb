@@ -78,25 +78,25 @@ def draw?
 end
 
 def over?
-  draw? == true ? true : false || full? == true && draw? == false ? true : false
+  # draw? == true ? true : false || (full? == true && draw? == false) ? true : false
+  won? || draw?
 end
 
 def winner
   if winner = won?
     a = winner[0]
-    board[a]
+    @board[a]
   end
 end
 
 def play
   until over? do
-    turn
-    won?
+  turn
   end
   if winner
-    "Congratulations #{winner}"
+    puts "Congratulations #{winner}!"
   elsif draw?
-    "DRAW!"
+    puts "Cat's Game!"
   end
 end
 
