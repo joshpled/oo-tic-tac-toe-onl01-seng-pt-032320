@@ -78,7 +78,7 @@ def draw?
 end
 
 def over?
-  draw? == true ? true : false || full? == true && draw? == false ? true : false
+  draw? == true ? true : false || (full? == true && draw? == false) ? true : false
 end
 
 def winner
@@ -96,7 +96,7 @@ def play
     "DRAW!"
   else
     turn
-  end 
+  end
 end
 end
 
