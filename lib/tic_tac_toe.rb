@@ -90,12 +90,13 @@ end
 
 def play
   until over? do
-    turn
+
   if winner
     "Congratulations #{winner}"
   elsif draw?
     "DRAW!"
-  end
+  else
+    turn
 end
 end
 
