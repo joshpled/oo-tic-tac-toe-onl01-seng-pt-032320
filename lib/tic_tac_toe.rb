@@ -50,7 +50,6 @@ def turn
    puts "Can't do that!"
    turn = gets
  end
- winner
 end
 
 def won?
@@ -97,7 +96,7 @@ def play
   elsif draw?
     "DRAW!"
   end
-end 
+end
 end
 
 end
