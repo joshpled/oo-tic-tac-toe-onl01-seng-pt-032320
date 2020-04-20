@@ -50,6 +50,7 @@ def turn
    puts "Can't do that!"
    turn = gets
  end
+ winner
 end
 
 def won?
@@ -91,7 +92,6 @@ end
 def play
   until over? do
     turn
-    winner
   end
   if winner
     "Congratulations #{winner}"
