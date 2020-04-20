@@ -93,8 +93,9 @@ def play
   until over? do
   turn
   end
+  binding.pry
   if winner
-    "Congratulations #{winner}"
+    "Congratulations #{winner}!"
   elsif draw?
     "DRAW!"
   end
