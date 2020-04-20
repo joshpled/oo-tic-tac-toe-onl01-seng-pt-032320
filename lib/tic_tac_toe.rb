@@ -85,7 +85,7 @@ end
 def winner
   if winner = won?
     a = winner[0]
-    board[a]
+    @board[a]
   end
 end
 
