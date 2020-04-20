@@ -96,6 +96,7 @@ def play
     "DRAW!"
   else
     turn
+  end 
 end
 end
 
